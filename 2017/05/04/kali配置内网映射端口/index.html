@@ -6,19 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | yb2pin&#39;s blog</title>
+  <title>kali配置内网映射端口 | yb2pin&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+  <meta name="description" content="前言 之前学习msf的时候一直是在局域网下的情况使用的，一直在想如果目标机在外网，应如何反弹shell，因为kali自身是在内网环境下，目标机访问不到，就无法弹回shell，最近有空就把这个问题解决了。">
 <meta name="keywords">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/04/21/hello-world/index.html">
+<meta property="og:title" content="kali配置内网映射端口">
+<meta property="og:url" content="http://yoursite.com/2017/05/04/kali配置内网映射端口/index.html">
 <meta property="og:site_name" content="yb2pin's blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
-<meta property="og:updated_time" content="2017-05-04T03:27:04.000Z">
+<meta property="og:description" content="前言 之前学习msf的时候一直是在局域网下的情况使用的，一直在想如果目标机在外网，应如何反弹shell，因为kali自身是在内网环境下，目标机访问不到，就无法弹回shell，最近有空就把这个问题解决了。">
+<meta property="og:image" content="http://yoursite.com/Users/chenpeisi/mysite/Hexo/source/_pic/test.png">
+<meta property="og:image" content="http://yoursite.com/Users/chenpeisi/mysite/Hexo/source/_pic/屏幕快照%202017-05-04%20上午11.18.43.png">
+<meta property="og:image" content="http://yoursite.com/Users/chenpeisi/mysite/Hexo/source/_pic/屏幕快照%202017-05-04%20上午11.22.08.png">
+<meta property="og:updated_time" content="2017-05-04T03:26:59.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="twitter:title" content="kali配置内网映射端口">
+<meta name="twitter:description" content="前言 之前学习msf的时候一直是在局域网下的情况使用的，一直在想如果目标机在外网，应如何反弹shell，因为kali自身是在内网环境下，目标机访问不到，就无法弹回shell，最近有空就把这个问题解决了。">
+<meta name="twitter:image" content="http://yoursite.com/Users/chenpeisi/mysite/Hexo/source/_pic/test.png">
   
     <link rel="alternative" href="/atom.xml" title="yb2pin&#39;s blog" type="application/atom+xml">
   
@@ -154,36 +158,50 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-kali配置内网映射端口" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      kali配置内网映射端口
     </h1>
   
 
         
-        <a href="/2017/04/21/hello-world/" class="archive-article-date">
-  	<time datetime="2017-04-21T09:01:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-21</time>
+        <a href="/2017/05/04/kali配置内网映射端口/" class="archive-article-date">
+  	<time datetime="2017-05-04T02:18:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>之前学习msf的时候一直是在局域网下的情况使用的，一直在想如果目标机在外网，应如何反弹shell，因为kali自身是在内网环境下，目标机访问不到，就无法弹回shell，最近有空就把这个问题解决了。</p>
+</blockquote>
 <a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>核心：将内网端口映射在公网端口上</p>
+<h3 id="做法"><a href="#做法" class="headerlink" title="做法"></a>做法</h3><p>使用花生壳做内网穿透</p>
+<p>一、安装说明</p>
+<p>1、安装必要的开发包</p>
+<p>官方（centos）</p>
+<figure class="highlight plain"><figcaption><span>install gcc gcc-c++ autoconf automake```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">但kali可能存在这个问题 </div><div class="line"></div><div class="line">```bash</div><div class="line">root@kali:~# yum install gcc gcc-c++ autoconf automake</div><div class="line">没有已启用的仓库。</div><div class="line">执行 &quot;yum repolist all&quot; 查看您拥有的仓库。</div><div class="line">您可以用 yum-config-manager --enable &amp;lt;仓库名&amp;gt; 来启用仓库</div><div class="line">root@kali:~# yum repolist all</div><div class="line">repolist: 0</div></pre></td></tr></table></figure>
+<p>所以使用apt-get</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">apt-get install gcc g++ automake autoconf</div></pre></td></tr></table></figure>
+<p>又遇到下载页出现404的情况,not found出现这个问题的原因是： 之前 /etc/apt/sources.list 路径里面的软件源更新网站有的已经过时了，需要更新新的网站。</p>
+<p>附上我用的几个源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">#kali官方源</div><div class="line">deb http://http.kali.org/kali kali-rolling main non-free contrib</div><div class="line">#中科大的源</div><div class="line">deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib</div><div class="line">#清华</div><div class="line">deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free</div><div class="line"></div><div class="line">apt-get update &amp; apt-get upgrade</div><div class="line">apt-get dist-upgrade</div></pre></td></tr></table></figure>
+<p>2.到花生壳官网下载linux安装包 phddns_3.0-2_amd64.deb</p>
+<p><code>dpkg -i phddns_3.0-2_amd64.deb</code></p>
+<p>安装成功</p>
+<p>3.开启phddns</p>
+<p><img src="/Users/chenpeisi/mysite/Hexo/source/_pic/test.png" alt=""></p>
+<p>4.根据这个SN值登录花生壳官网，密码admin，再去配置内网穿透端口映射</p>
+<p><img src="/Users/chenpeisi/mysite/Hexo/source/_pic/屏幕快照 2017-05-04 上午11.18.43.png" alt=""></p>
+<p>5.完成后反弹shell</p>
+<p><img src="/Users/chenpeisi/mysite/Hexo/source/_pic/屏幕快照 2017-05-04 上午11.22.08.png" alt=""></p>
 
       
 
@@ -263,7 +281,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/04/21/hello-world/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/05/04/kali配置内网映射端口/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -277,11 +295,15 @@
   
 <nav id="article-nav">
   
-  
-    <a href="/2017/04/30/2017实习面试经历/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">2017实习面试经历</div>
-      <i class="icon-circle-right"></i>
+    <a href="/2017/05/02/渗透测试笔记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          渗透测试笔记
+        
+      </div>
     </a>
+  
   
 </nav>
 
